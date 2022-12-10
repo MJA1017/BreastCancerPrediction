@@ -39,16 +39,3 @@ model = LogisticRegression()
 
 model.fit(X_train, y_train)
 model.score(X_test,y_test)
-
-
-#%%
-# print(model.predict(x))
-print(y)
-
-#%% Plotting the graphs
-import matplotlib.pyplot as plt
-
-plt.scatter(x, y,color='g')
-plt.plot(x, model.predict(x), color='k')
-
-plt.show()
